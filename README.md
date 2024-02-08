@@ -1,12 +1,12 @@
-#TESTS:
+## TESTS:
 	-- Windows 10 x64
 	-- Windows 7 x64
 	-- Windows Server 2008 x32
 	-- Windows xp x32
-#BUILD:
+BUILD:
 	g++ main.cpp -lntdll -o ProcessHide.exe
 	g++ main.cpp -lntdll -o ProcessHide.exe -m32
-#NOTES:
+NOTES:
 	* This can be used multiple times on the same monitoring process
 		if and only if the process is using NtQuerySystemInformation
 		to get the processes list and is linked against ntdll.dll
